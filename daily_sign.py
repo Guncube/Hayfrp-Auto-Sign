@@ -11,5 +11,5 @@ data = {
     'passwd':"123456"
 }
 
-response = requests.post(url=url, data=data, headers=headers)
+response = requests.post(url=url, json=data, headers=headers)
 print(response.text)
