@@ -3,13 +3,11 @@ import requests
 url = ("https://api.hayfrp.com")
 
 headers = {
-    'waf': 'off'
+    "waf": "off"
 }
-data = {
-    'type': 'login',
-    'user':'Kirin',
-    'passwd':"123456"
-}
+body = {
+    "key1": "value1", 
+    "key2": "value2"}
 
-response = requests.post(url=url, json=data, headers=headers)
+response = requests.post(url=url, data=body, headers=headers)
 print(response.text)
