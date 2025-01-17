@@ -2,7 +2,7 @@ import requests
 
 url = ("https://api.hayfrp.com")
 
-headers = {"waf": 'off',}
+headers = {"waf": 'off'}
 data = {
     'type': 'login',
     'user':'Kirin',
